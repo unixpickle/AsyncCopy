@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AsyncCopy' target in the 'AsyncCopy' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif
