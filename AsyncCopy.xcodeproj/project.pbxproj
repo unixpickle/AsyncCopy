@@ -10,6 +10,8 @@
 		FA0A5909145A24D20008892A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A5908145A24D20008892A /* Foundation.framework */; };
 		FA0A590C145A24D20008892A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A590B145A24D20008892A /* main.m */; };
 		FA0A5910145A24D20008892A /* AsyncCopy.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA0A590F145A24D20008892A /* AsyncCopy.1 */; };
+		FA0A5918145A25160008892A /* AsyncCopier.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0A5917145A25160008892A /* AsyncCopier.m */; };
+		FA0A5920145A340A0008892A /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A591F145A340A0008892A /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +31,12 @@
 		FA0A5904145A24D20008892A /* AsyncCopy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AsyncCopy; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0A5908145A24D20008892A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA0A590B145A24D20008892A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA0A590E145A24D20008892A /* AsyncCopy-Prefix.pch */ = {isa = PBXFileReference; path = "AsyncCopy-Prefix.pch"; sourceTree = "<group>"; };
+		FA0A590E145A24D20008892A /* AsyncCopy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AsyncCopy-Prefix.pch"; sourceTree = "<group>"; };
 		FA0A590F145A24D20008892A /* AsyncCopy.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AsyncCopy.1; sourceTree = "<group>"; };
+		FA0A5916145A25160008892A /* AsyncCopier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncCopier.h; sourceTree = "<group>"; };
+		FA0A5917145A25160008892A /* AsyncCopier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncCopier.m; sourceTree = "<group>"; };
+		FA0A591D145A33F30008892A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FA0A591F145A340A0008892A /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0A5920145A340A0008892A /* Carbon.framework in Frameworks */,
 				FA0A5909145A24D20008892A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +55,8 @@
 		FA0A58F9145A24D10008892A = {
 			isa = PBXGroup;
 			children = (
+				FA0A591F145A340A0008892A /* Carbon.framework */,
+				FA0A591D145A33F30008892A /* CoreFoundation.framework */,
 				FA0A590A145A24D20008892A /* AsyncCopy */,
 				FA0A5907145A24D20008892A /* Frameworks */,
 				FA0A5905145A24D20008892A /* Products */,
@@ -73,6 +82,7 @@
 		FA0A590A145A24D20008892A /* AsyncCopy */ = {
 			isa = PBXGroup;
 			children = (
+				FA0A591C145A31590008892A /* AsyncCopier */,
 				FA0A590B145A24D20008892A /* main.m */,
 				FA0A590F145A24D20008892A /* AsyncCopy.1 */,
 				FA0A590D145A24D20008892A /* Supporting Files */,
@@ -86,6 +96,15 @@
 				FA0A590E145A24D20008892A /* AsyncCopy-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA0A591C145A31590008892A /* AsyncCopier */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A5916145A25160008892A /* AsyncCopier.h */,
+				FA0A5917145A25160008892A /* AsyncCopier.m */,
+			);
+			name = AsyncCopier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0A590C145A24D20008892A /* main.m in Sources */,
+				FA0A5918145A25160008892A /* AsyncCopier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
